@@ -1,0 +1,66 @@
+{
+    "layout": "./index.hbs",
+    "data": {
+        "title": "Medical Test",
+        "section": [
+            {
+                "content-img": "http://i.imgur.com/uTO8oZu.jpg",
+                "content-left-center-right": "center",
+                "content": [
+                    {
+                        "detail": "HealthCare",
+                        "detail-font-color": "black",
+                        "detail-font-size": "100"
+                    },
+                    {
+                        "detail": "Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor",
+                        "detail-font-color": "black",
+                        "detail-font-size": "16"
+                    },
+                    {
+                        "detail": "Magna esse ullamco pariatur adipisicing consectetur eu commodo officia",
+                        "detail-font-color": "black",
+                        "detail-font-size": "16"
+                    }
+                ]
+            },
+            {
+                "content-img": "http://i.imgur.com/bnJPU4P.jpg",
+                "content-left-center-right": "left",
+                "content": [
+                    {
+                        "detail": "Medical",
+                        "detail-font-color": "white",
+                        "detail-font-size": "100"
+                    },
+                    {
+                        "detail": "Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet",
+                        "detail-font-color": "black",
+                        "detail-font-size": "16"
+                    }
+                ]
+            },
+            {
+                "content-img": "http://i.imgur.com/yx1PCXe.jpg",
+                "content-left-center-right": "right",
+                "content": [
+                    {
+                        "detail": "Care",
+                        "detail-font-color": "white",
+                        "detail-font-size": "50"
+                    },
+                    {
+                        "detail": "Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing",
+                        "detail-font-color": "black",
+                        "detail-font-size": "20"
+                    },
+                    {
+                        "detail": "Elit consequat nisi eiusmod aute ipsum sunt veniam do est",
+                        "detail-font-color": "black",
+                        "detail-font-size": "20"
+                    }
+                ]
+            }
+        ]
+    }
+}
