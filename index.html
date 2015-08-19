@@ -18,19 +18,19 @@
                 HealthCare
             </div>
             <div>
-                <img src="" alt="" style="width:500px;">
+                <img class="detail-img" src="" alt="" style="width:500px;">
             </div>
             <div style="font-size: 16px; color: black;">
                 Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor
             </div>
             <div>
-                <img src="" alt="" style="width:500px;">
+                <img class="detail-img" src="" alt="" style="width:500px;">
             </div>
             <div style="font-size: 16px; color: black;">
                 Magna esse ullamco pariatur adipisicing consectetur eu commodo officia
             </div>
             <div>
-                <img src="" alt="" style="width:500px;">
+                <img class="detail-img" src="" alt="" style="width:500px;">
             </div>
         </div>
         <div class="section" style="text-align: left; vertical-align:middle; background-image: url(http://i.imgur.com/bnJPU4P.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
@@ -38,13 +38,13 @@
                 Medical
             </div>
             <div>
-                <img src="http://i.imgur.com/GvESoq9.jpg" alt="" style="width:500px;">
+                <img class="detail-img" src="http://i.imgur.com/GvESoq9.jpg" alt="" style="width:500px;">
             </div>
             <div style="font-size: 16px; color: black;">
                 Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet
             </div>
             <div>
-                <img src="" alt="" style="width:500px;">
+                <img class="detail-img" src="" alt="" style="width:500px;">
             </div>
         </div>
         <div class="section" style="text-align: right; vertical-align:middle; background-image: url(http://i.imgur.com/yx1PCXe.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
@@ -52,19 +52,19 @@
                 Care
             </div>
             <div>
-                <img src="" alt="" style="width:500px;">
+                <img class="detail-img" src="" alt="" style="width:500px;">
             </div>
             <div style="font-size: 20px; color: black;">
                 Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing
             </div>
             <div>
-                <img src="" alt="" style="width:500px;">
+                <img class="detail-img" src="" alt="" style="width:500px;">
             </div>
             <div style="font-size: 20px; color: black;">
                 Elit consequat nisi eiusmod aute ipsum sunt veniam do est
             </div>
             <div>
-                <img src="" alt="" style="width:500px;">
+                <img class="detail-img" src="" alt="" style="width:500px;">
             </div>
         </div>
     </div>
@@ -72,6 +72,13 @@
         $(document).ready(function() {
             $('#fullpage').fullpage();
         });
+        var detail_imgs = document.getElementsByClassName("detail-img");
+        for (var img_index in detail_imgs) {
+            console.log(detail_imgs[img_index].src);
+            if (detail_imgs[img_index].src == document.URL) {
+                detail_imgs[img_index].style.display = 'none';
+            }
+        }
     </script>
 
 

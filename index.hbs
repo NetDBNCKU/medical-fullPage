@@ -22,7 +22,7 @@
                 {{this.detail}}
             </div>
             <div>
-                <img src="{{this.detail-img}}" alt="" style="width:500px;"/>
+                <img class="detail-img" src="{{this.detail-img}}" alt="" style="width:500px;"/>
             </div>
             {{/each}}
         </div>
@@ -32,6 +32,13 @@
         $(document).ready(function() {
             $('#fullpage').fullpage();
         });
+        var detail_imgs = document.getElementsByClassName("detail-img");
+        for (var img_index in detail_imgs) {
+            console.log(detail_imgs[img_index].src);
+            if (detail_imgs[img_index].src == document.URL) {
+                detail_imgs[img_index].style.display = 'none';
+            }
+        }
     </script>
 </body>
 </html>
