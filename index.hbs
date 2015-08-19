@@ -16,9 +16,14 @@
 <body style="font-family: Roboto,Helvetica,Arial,sans-serif;">
     <div id="fullpage" class="name">
         {{#each section}}
-        <div class="section" style="text-align: {{content-left-center-right}}; vertical-align:middle; background-image: url({{content-img}}); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 20px;">
+        <div class="section" style="text-align: {{content-left-center-right}}; vertical-align:middle; background-image: url({{content-img}}); background-repeat: no-repeat; background-position: center; background-size: cover;">
             {{#each this.content}}
-            <p style="font-size: {{detail-font-size}}px; color: {{detail-font-color}};">{{this.detail}}</p>
+            <div style="font-size: {{detail-font-size}}px; color: {{detail-font-color}};">
+                {{this.detail}}
+            </div>
+            <div>
+                <img src="{{this.detail-img}}" alt="" style="width:500px;"/>
+            </div>
             {{/each}}
         </div>
         {{/each}}

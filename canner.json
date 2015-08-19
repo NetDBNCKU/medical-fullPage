@@ -30,6 +30,7 @@
                 "content": [
                     {
                         "detail": "Medical",
+                        "detail-img": "http://i.imgur.com/GvESoq9.jpg",
                         "detail-font-color": "white",
                         "detail-font-size": "100"
                     },
